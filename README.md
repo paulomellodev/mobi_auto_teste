@@ -24,7 +24,7 @@ O aplicativo possui apenas duas páginas, a primeira com 3 campos de Select, nos
 
 ### 1.1 Deploy da Aplicação
 
-- <a name="MobiAuto_teste" href="https://mobiauto-test.vercel.app/" target="_blank">MobiAuto - Live</a>
+- <a name="MobiAuto_teste" href="https://mobi-auto-teste-jg1p.vercel.app/" target="_blank">MobiAuto - Live</a>
 
 <a name="techs"></a>
 
