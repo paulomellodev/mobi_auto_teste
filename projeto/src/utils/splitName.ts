@@ -1,4 +1,4 @@
-import { IBrandsModelsAndYear } from "@/schemas/fipeApiResponses";
+import { IBrandsModelsAndYear } from "@/@types";
 
 export const splitName = (set: IBrandsModelsAndYear[]) => {
   return set.map((value) => ({
