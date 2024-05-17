@@ -8,7 +8,6 @@ import {
   SelectProps,
 } from "@mui/material";
 
-import { ReduxDispatch, ReduxThunkAction } from "@/redux/store";
 import { IBrandsModelsAndYear } from "@/@types";
 
 interface ISelectInput extends SelectProps {
