@@ -6,7 +6,7 @@ import {
 } from "@/@types";
 import { api } from "@/services/api";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import React, { ReactNode, createContext, useContext, useState } from "react";
 
 export type TabelaFipeType = {
@@ -42,6 +42,7 @@ export const TabelaFipeContext = createContext<TabelaFipeType>(
 );
 
 export const TabelaFipeProvider = ({ children }: { children?: ReactNode }) => {
+  const router = useRouter();
   const [marcas, setMarcas] = useState<IBrandsModelsAndYear[] | undefined>();
   const [modelos, setModelos] = useState<IBrandsModelsAndYear[] | undefined>();
   const [anos, setAnos] = useState<IBrandsModelsAndYear[] | undefined>();
@@ -92,6 +93,7 @@ export const TabelaFipeProvider = ({ children }: { children?: ReactNode }) => {
 
     setAnos(data);
     setLoading(false);
+    router.push("resultado");
   };
 
   const retrieveVeiculo = async () => {
