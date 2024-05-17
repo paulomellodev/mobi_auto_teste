@@ -9,20 +9,12 @@ import { useTabela } from "@/app/context/provider";
 import { selectOption } from "@/utils/helpers";
 import { TBrandsResponse } from "@/@types";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
 import Circular from "../Loading";
 
 const Form = ({ marcas }: { marcas: TBrandsResponse }) => {
   const router = useRouter();
 
   const data = useTabela();
-
-  useEffect(() => {
-    if (data.veiculo) {
-      router.push("resultado");
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [data.veiculo]);
 
   return (
     <>
