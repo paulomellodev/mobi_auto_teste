@@ -9,10 +9,10 @@ export default function Circular({ loading }: ICircularProgress) {
   return (
     <Box
       sx={{
-        position: "absolute",
+        position: "fixed",
         display: loading ? "flex" : "none",
-        top: "-137px",
-        left: "-745px",
+        top: 0,
+        left: 0,
         width: "100vw",
         height: "100vh",
         backgroundColor: "#a9a9a9a9",
