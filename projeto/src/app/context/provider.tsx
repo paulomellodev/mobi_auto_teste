@@ -93,7 +93,6 @@ export const TabelaFipeProvider = ({ children }: { children?: ReactNode }) => {
 
     setAnos(data);
     setLoading(false);
-    router.push("resultado");
   };
 
   const retrieveVeiculo = async () => {
@@ -104,6 +103,7 @@ export const TabelaFipeProvider = ({ children }: { children?: ReactNode }) => {
 
     setVeiculos(data);
     setLoading(false);
+    router.push("resultado");
   };
 
   return (
