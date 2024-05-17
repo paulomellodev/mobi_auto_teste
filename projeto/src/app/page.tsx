@@ -44,7 +44,7 @@ export default async function Home() {
   );
 }
 
-export async function getData() {
+async function getData() {
   const data = await api
     .get<TBrandsResponse>("/carros/marcas")
     .then((res) => res.data);
